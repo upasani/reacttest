@@ -2,7 +2,7 @@ import { CITY_ERROR,CITY_SUCCESS } from "./action";
 const initialState={
     success:false,
     error:false,
-    city:[]
+    City:[]
 }
 
 export const cityReducer=(store=initialState,{type,payload})=>{
