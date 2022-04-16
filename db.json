@@ -1,0 +1,33 @@
+{
+  "countries": [
+    {
+      "Name": "INDIA"
+    },
+    {
+      "Name": "Srilanka"
+    },
+    {
+      "Name": "USA"
+    }
+  ],
+  "city": [
+    {
+      "id": "1",
+      "Name": "INDIA",
+      "City": "Delhi",
+      "population": "19,000,000"
+    },
+    {
+      "id": "2",
+      "Name": "Srilanka",
+      "City": " Colombo",
+      "population": "5,600,000"
+    },
+    {
+      "id":"3",
+      "Name": "USA",
+      "City": "sanfrancisco",
+      "population": "29,000,000"
+    }
+  ]
+}
