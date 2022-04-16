@@ -1,15 +1,11 @@
-const CITY_LOADING = 'CITY_LOADING';
-const CITY_ADDED = 'CITY_ADDED';
-const CITY_ERROR = 'CITY_ERROR';
 
-export const cityLoding = () => {
-    return {
-        type: CITY_LOADING
-    }
-}
+export const CITY_SUCCESS= 'CITY_SUCCESS';
+export const CITY_ERROR = 'CITY_ERROR';
+
+
 export const cityAdded = (payload) => {
     return {
-        type: CITY_ADDED,
+        type: CITY_SUCCESS,
         payload
     }
 }
@@ -19,7 +15,7 @@ export const cityError = () => {
     }
 }
 export const cityInfo = (payload) => (dispatch) => {
-    dispatch(cityLoding());
+    
     fetch(`http://localhost:8080/city`, {
         method: "POST",
         body: JSON.stringify(payload),

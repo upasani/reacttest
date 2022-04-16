@@ -16,7 +16,7 @@ function App() {
         <Route path={'/add-city'} element={<AddCity />} />
       </Routes>
      
-        <Link to='/'></Link>
+        <Link to='/'>Home</Link>
         <Link to='/add-country'>Add-Country</Link>
         <Link to='/add-city'> Add-City</Link>
       </div>
