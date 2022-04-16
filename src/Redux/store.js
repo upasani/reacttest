@@ -1,6 +1,7 @@
 
 import { createStore, compose, combineReducers, applyMiddleware } from "redux";
 import { cityReducer } from "./City/reducer";
+import { countryReducer } from "./Country/reducer";
 
 import thunk from 'redux-thunk'
 const composeEnhancers =
@@ -17,7 +18,8 @@ const enhancer = composeEnhancers(
 );
 const rootReducer = combineReducers(
     {
-        city:cityReducer
+        city:cityReducer,
+        country:countryReducer
        
     }
 
