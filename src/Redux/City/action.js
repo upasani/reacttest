@@ -14,11 +14,12 @@ export const cityError = () => {
         type: CITY_ERROR
     }
 }
-export const cityInfo = (payload) => (dispatch) => {
+export const cityInfo = ({City,population,Country}) => (dispatch) => {
+    console.log("In the cityInfo",);
     
     fetch(`http://localhost:8080/city`, {
         method: "POST",
-        body: JSON.stringify(payload),
+        body: JSON.stringify({City,population,Country}),
         headers: {
             "Content-Type": "Application/json"
         }

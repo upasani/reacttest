@@ -40,7 +40,14 @@ export const Home = () => {
 
                     ))}
                 </tbody>
+                
+
             </table>
+            <button
+            onClick={()=>getInfo.sort((a,b)=>{
+                return a.population-b.population;
+            })}
+            >SortAscending</button>
 
         </div>
     )

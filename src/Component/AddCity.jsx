@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useDispatch,useSelector} from "react-redux";
+import { cityInfo } from "../Redux/City/action";
 
 export const AddCity=()=>{
     const [City,update]=useState("");
@@ -11,12 +12,11 @@ export const AddCity=()=>{
     const addcity=()=>{
         // console.log(city ,"city is");
         const payload={
-            City,
             Country,
+            City,
             population
-
         }
-       dispatch(payload);
+        dispatch(cityInfo(payload));
 
     }
     return(
